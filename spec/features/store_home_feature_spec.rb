@@ -20,6 +20,7 @@ describe 'Feature Test: Store', :type => :feature do
           else
             expect(page).to have_content item.title
             expect(page).to have_content "$#{item.price.to_f/100}"
+            # binding.pry
           end
         end
       end
